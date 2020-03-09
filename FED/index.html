@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FED_final</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cute+Font&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+        <h1 class="storename"> Mee Maw <h1>
+                <input id="modalBtn" class="viewcart" type="image" src="images/vc.png" alt="Submit">
+
+                <br>
+    </div>
+    <br>
+
+    <!-- Modal -->
+
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="closebtn">&times;</span>
+                <h3>Your Cart</h3>
+            </div>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">Php 0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">ORDER NOW</button>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Carousel-->
+    <div class="carousel">
+
+        <div class="Mycarousel">
+            <br>
+            <img class="slides" src="images/cover.jpg">
+            <div class="text">TRY IT NOW!</div>
+        </div>
+        <div class="Mycarousel">
+            <br>
+            <img class="slides" src="images/temp.jpg">
+
+        </div>
+
+        <div class="Mycarousel">
+            <br>
+            <img class="slides" src="images/bb.jpg">
+
+        </div>
+
+        <div class="Mycarousel">
+            <br>
+            <img class="slides" src="images/1.jpg">
+
+        </div>
+
+        <!--previous and next buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#9664;</a>
+        <a class="next" onclick="plusSlides(1)">&#9658;</a>
+
+
+
+    </div>
+
+    <div class="page" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+    <div class="groupdeals">
+        <h2 id="grouddeals">Group Deals:</h2>
+    </div>
+
+
+    <div class="row">
+        <div class="column">
+            <p class="name">Deal 1</p>
+            <img class="promo" src="images/p1.jpg">
+            <p class="price">Php399</p>
+            <p><button class="add">Add to Cart</button></p>
+        </div>
+        <br>
+        <div class="column">
+            <p class="name">Deal 2</p>
+            <img class="promo" src="images/p2.jpg">
+            <p class="price">Php449</p>
+            <p><button class="add">Add to Cart</button></p>
+        </div>
+        <br>
+        <div class="column">
+            <p class="name">Deal 3</p>
+            <img class="promo" src="images/p3.jpg">
+            <p class="price">Php499</p>
+            <p><button class="add">Add to Cart</button></p>
+        </div>
+        <br>
+        <div class="column">
+            <p class="name">Deal 4</p>
+            <img class="promo" src="images/p4.jpg">
+            <p class="price">Php549</p>
+            <p><button class="add">Add to Cart</button></p>
+        </div>
+        <br>
+        <div class="column">
+            <p class="name">Deal 5</p>
+            <img class="promo" src="images/p5.jpg">
+            <p class="price">Php549</p>
+            <p><button class="add">Add to Cart</button></p>
+        </div>
+        <br>
+        <div class="column">
+            <p class="name">Deal6</p>
+            <img class="promo" src="images/p6.jpg">
+            <p class="price">Php549</p>
+            <p><button class="add">Add to Cart</button></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="carousel.js"></script>
+    <script src="modal.js"></script>
+    <script src="cart2.js"></script>
+</body>
+
+</html>
